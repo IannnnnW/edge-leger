@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+
+}
+body{
+    font-family:'Roboto', sans-serif;
+    line-height:1.4rem;
+}
+a{
+    text-decoration:none;
+}
+p{
+    padding:0.75rem 0;
+}
+
+/*Utility Classes*/
+.container{
+    margin:auto;
+    max-width:1100px;
+    padding:0 2rem;
+    overflow:hidden;
+}
+.text-primary{
+    color:#93cb52;
+}
+.center{
+    text-align:center;
+}
+.btn{
+    display:inline-block;
+    padding: 0.5rem 2rem;
+    color:#fff;
+    background:#93cb52;
+    border:none;
+    border-radius:5px;
+}
+.btn-dark{
+    background:#333;
+    color:#fff;
+}
+.btn:hover{
+    background:#7ab436;
+}
+.l-heading{
+    font-size:2.5rem;
+    padding:0.75rem;
+    line-height:1.1;
+}
+.m-heading{
+    font-size:1.5rem;
+    padding:1rem;
+    line-height:1.1rem;
+}
+.bg-light{
+    background:#fff;
+    color:#333;
+}
+.bg-dark{
+    background:#333;
+    color:#fff;
+}
+.bg-primary{
+    background: #93cb52;
+    color:#fff;
+}
+.py-1{padding:1.5rem 0}
+.py-2{padding:2rem 0}
+.py-3{padding:3rem 0}
+
+.p-1{padding:1.5rem }
+.p-2{padding:2rem }
+.p-3{padding:3rem }
+
+.list{
+    padding:1rem 0;
+    list-style:none;
+}
+.list li{
+    border-bottom:1px dotted #444;
+}
+/*navbar positioning*/
+#navbar{
+    display:flex;
+    justify-content:space-between;
+    background:#333;
+    top:0;
+    color:#fff;
+    position:sticky;
+    z-index:1;
+    padding:1rem;
+}
+#navbar ul{
+    display:flex;
+    list-style:none;
+    justify-content:space-between;
+}
+#navbar ul li a{
+    color:#fff;
+    padding:0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover{
+    color:#fff;
+    background:#93cb52;
+    border-radius:5px;
+}
+#showcase{
+    background:#333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height:100vh;
+}
+#showcase .showcase-content{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    color:#fff;
+    padding:0 2rem;
+    /*Over-lay*/
+    position:absolute;
+    top:54px;
+    left:0px;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.4);
+}
+#what .items{
+    display:flex;
+    text-align:center;
+}
+#what .items .item{
+    flex:1;
+    text-align:center;
+    padding:1.5rem 2rem;
+}
+#what .items .item i{
+    background:#93cb52;
+    border-radius:50%;
+    padding:1rem;
+    margin-bottom:0.5rem;
+}
+#who{
+    display:flex;
+}
+#who .team-img{
+    background:url('../img/people.jpg') no-repeat center center/cover;
+}
+#who div{
+    flex:1;
+}
+#clients{
+    display:flex;
+    flex-direction:column;
+}
+#clients .items{
+    display:flex;
+}
+#clients .items img{
+    display:block;
+    margin:auto;
+    width:60%;
+}    
+#contact{
+    display:flex;
+}
+#contact .contact-form, #contact .location-img{
+    flex:1;
+    padding:1rem;
+}
+#contact .contact-form label{
+    display:block;
+    padding:0.25rem;
+}
+#contact .contact-form .form-group{
+    margin:0.75rem;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+    padding:0.5rem;
+    width:100%;
+}
+.location-img{
+    background:url('../img/showcase.jpg') no-repeat center center/cover;
+}
+#footer{
+    width:100%;
+}

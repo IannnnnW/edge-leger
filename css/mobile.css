@@ -1,0 +1,42 @@
+#what .items{
+    display:block;
+}
+#what .items .item{
+    display:flex;
+    text-align:left;
+}
+#what .items .item i{
+    margin-right:0.75rem;
+    align-self:center;
+}
+@media(max-width:500px){
+    #navbar{
+        flex-direction:column;
+        align-items:center;
+    }
+    #showcase .showcase-content{
+        /*Over-lay*/
+        position:absolute;
+        top:88px;
+        left:0px;
+        right:0;
+        bottom:5px;
+        background-color:rgba(0,0,0,0.4);
+    }
+    #navbar .logo{
+        padding-bottom:0.75rem;
+    }
+    #navbar h1{
+        text-align:center;
+        padding-bottom:0.75rem;
+    }
+    #who .team-img{
+        display:none;
+    }
+    #contact .location-img{
+        display:none;
+    }
+    #clients .items div:last-child{
+        display:none;
+    }
+}
